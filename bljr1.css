@@ -1,0 +1,213 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS Reset*/
+
+body{
+	font-family: cursive;
+	font-size: 16px;
+	line-height:28px;
+	background-image: url(../gambar.jpg);
+	
+}
+.topbar	{
+	position: fixed;
+	top:0px;
+	right: 0px;
+	left: 0px;
+	border-bottom:solid lightskyblue 5px;
+
+	z-index: 9999;
+	height: 40px;
+	background-color: salmon;
+}
+.twitter{
+	width: 200px;
+	height: 200px;
+	background-image: url(../Twitter.png);
+	display: inline-block;
+	text-indent: -9999px;
+	position: absolute;
+	top:-23px;
+	right:-36px;
+
+}
+.container{
+	width: 960px;
+	margin:80px auto;
+	border-right:double 10px black;
+	border-left:double 10px black;
+	background-color: white;
+	position: relative;
+
+}
+.header{
+	padding: 20px;
+}
+.header h1{
+	font-size: 40px ;
+	text-align: center;
+	color: salmon;
+
+
+
+}
+	.header ul li{
+		display: inline-block;
+		margin-top: 20px;
+		margin-right: 5px;
+		padding-right: 5px;
+		border-right: 1px salmon solid;
+}
+
+.header a{
+	text-decoration: none;
+	color: salmon;
+}
+.header ul li:nth-child(5){
+	border-right:none;
+}
+
+.header ul li a:hover{
+	background-color: lightblue;
+}
+.header ul li a:active{
+	color: green;
+}
+.hero{
+	padding: 20px
+}
+.hero{
+
+	height: 200px;
+	background-image: url(../gambar.jpg);
+	border-bottom: 5px solid lightskyblue;
+	border-top: 5px solid salmon;
+	background-position: 40 70px;
+}
+.main{
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	float: left;
+	border-right: lightblue solid 5px;
+	
+}
+.main h2{
+	font-size:  30px;
+	font-weight: bold;
+}
+.main .penulis{
+	font-size: 11px;
+	margin-top: -5px;
+}
+.main .penulis a{
+	color: salmon;
+	text-decoration: none;
+}
+
+.main p{
+	text-align: justify;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+.sidebar{
+	width: 300px;
+	
+	float: right;
+	padding: 20px;
+
+}
+.sidebar img{
+	width: 70px;
+	height: 70px;
+	float: left;
+	padding-right: 10px;
+}
+.sidebar p{
+	font:11px/15px arial;
+	text-align: justify;
+}
+.copyright{
+	background-color:black;
+	height: 50px;
+	line-height:50px
+}
+.copyright p{
+
+	color: white;
+	text-align: center;
+	font-size: 14px;
+	
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
